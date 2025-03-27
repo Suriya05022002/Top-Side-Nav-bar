@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Toggle Button -->
+    <button id="sidebarToggle"><i class="fas fa-bars"></i></button>
+    
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+           
+            <a class="navbar-brand" href="#">Gowthamraj Network</a>
+        </div>
+    </nav>
+
+    <!-- Overlay for mobile -->
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <ul class="list-unstyled">
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-calculator"></i> Arithmetic Aptitude</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Data Interpretation</a></li>
+            <li><a href="#"><i class="fas fa-book"></i> Verbal Ability</a></li>
+            <li><a href="#"><i class="fas fa-brain"></i> Logical Reasoning</a></li>
+            <li><a href="#"><i class="fas fa-code"></i> Programming</a></li>
+            <li><a href="#"><i class="fas fa-newspaper"></i> Current Affairs</a></li>
+            <li><a href="#"><i class="fas fa-user-tie"></i> HR Interview</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="content">
+        <h2 class="text-success">Percentage Problems</h2>
+        <p>Practice aptitude questions on percentages</p>
+        
+        <!-- Question 1 -->
+        <div class="quiz">
+            <h4>Question 1:</h4>
+            <p>Two students appeared at an examination. One secured 9 marks more than the other, and his marks were 56% of the total. What are their marks?</p>
+            <ul class="options">
+                <li onclick="checkAnswer(this, false)">A) 39, 30</li>
+                <li onclick="checkAnswer(this, false)">B) 41, 32</li>
+                <li onclick="checkAnswer(this, true)">C) 42, 33</li>
+                <li onclick="checkAnswer(this, false)">D) 43, 34</li>
+            </ul>
+            <div class="explanation">
+                <strong>Explanation:</strong><br><br>
+                Let their marks be **(x + 9)** and **x**.<br><br>
+                Since:<br>
+                <b>(x + 9) = (56/100) × (x + 9 + x)</b><br><br>
+                Multiplying both sides by **100**:<br>
+                <b>25(x + 9) = 14(2x + 9)</b><br><br>
+                Expanding:<br>
+                <b>25x + 225 = 28x + 126</b><br>
+                <b>3x = 99</b><br>
+                <b>x = 33</b><br><br>
+                So, their marks are **42 and 33**.<br>
+                <b>Final Answer:</b> 42, 33.
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="quiz">
+            <h4>Question 2:</h4>
+            <p>If the price of a product is increased by 25%, by what percent should the consumption be reduced to maintain the same expense?</p>
+            <ul class="options">
+                <li onclick="checkAnswer(this, false)">A) 15%</li>
+                <li onclick="checkAnswer(this, true)">B) 20%</li>
+                <li onclick="checkAnswer(this, false)">C) 25%</li>
+                <li onclick="checkAnswer(this, false)">D) 30%</li>
+            </ul>
+            <div class="explanation">
+                <strong>Explanation:</strong><br><br>
+                If the price increases by **R%**, the reduction required in consumption is:<br><br>
+                <b>(R / (100 + R)) × 100</b><br><br>
+                Substituting **R = 25**:<br>
+                <b>(25 / 125) × 100 = 20%</b><br><br>
+                <b>Final Answer:</b> 20%.
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="quiz">
+            <h4>Question 3:</h4>
+            <p>If 45% of a number is 315, what is the number?</p>
+            <ul class="options">
+                <li onclick="checkAnswer(this, false)">A) 600</li>
+                <li onclick="checkAnswer(this, true)">B) 700</li>
+                <li onclick="checkAnswer(this, false)">C) 800</li>
+                <li onclick="checkAnswer(this, false)">D) 900</li>
+            </ul>
+            <div class="explanation">
+                <strong>Explanation:</strong><br><br>
+                Let the number be **X**.<br><br>
+                <b>45% of X = 315</b><br><br>
+                Solving for X:<br>
+                <b>X = (315 × 100) / 45</b><br>
+                <b>X = 700</b><br><br>
+                <b>Final Answer:</b> 700.
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="quiz">
+            <h4>Question 4:</h4>
+            <p>What percentage of 200 is 80?</p>
+            <ul class="options">
+                <li onclick="checkAnswer(this, false)">A) 30%</li>
+                <li onclick="checkAnswer(this, false)">B) 35%</li>
+                <li onclick="checkAnswer(this, true)">C) 40%</li>
+                <li onclick="checkAnswer(this, false)">D) 50%</li>
+            </ul>
+            <div class="explanation">
+                <strong>Explanation:</strong><br><br>
+                Using the percentage formula:<br>
+                <b>(80 / 200) × 100</b><br><br>
+                <b>= 40%</b><br><br>
+                <b>Final Answer:</b> 40%.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
