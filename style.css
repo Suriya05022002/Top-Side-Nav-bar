@@ -7,7 +7,7 @@
     transition: left 0.3s ease;
     background-color: rgb(252, 249, 249);
     z-index: 1000;
-    top: 56px; /* Height of navbar */
+    top: 59px; /* Height of navbar */
 }
 
 #sidebar ul {
@@ -170,10 +170,42 @@
     }
 }
 .container-fluid .navbar-brand {
-    font-size: larger;
+   
+    font-family: 'Work Sans';font-size: 22px;
     text-align: center;
     width: 100%; /* Ensure full width */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footer {
+    background:#19692c; /* Same color as navbar */
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    position: relative; /* Change to 'fixed' if you want it always visible */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Work Sans';font-size: 19px;
+}
+
+.footer-content p {
+    margin: 0;
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+        padding: 10px 0;
+    }
 }
